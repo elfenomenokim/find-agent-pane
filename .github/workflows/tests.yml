@@ -14,19 +14,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # Python versions on Linux; macOS once.
+        # Linux only: GitHub's macOS arm64 runners were out of capacity and cancelled every queued
+        # job (2026-11-21). macOS is covered by the fixtures captured on two Mac minis.
         os: [ubuntu-latest]
         python: ["3.10", "3.11", "3.12", "3.13"]
         include:
           # ubuntu-latest no longer ships Python 3.9
           - os: ubuntu-22.04
             python: "3.9"
-          - os: macos-latest
-            python: "3.13"
     runs-on: ${{ matrix.os }}
-    # GitHub's macOS arm64 runners were out of capacity (2026-11-21: "job was not acquired by
-    # Runner of type hosted"); a macOS queue failure must not turn the badge red.
-    continue-on-error: ${{ startsWith(matrix.os, 'macos') }}
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
