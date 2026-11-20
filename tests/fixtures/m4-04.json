@@ -1,0 +1,78 @@
+{
+ "host": "m4",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:15:25Z",
+ "socket": "fenok-next",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%15",
+  "session": "fenok-next",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 88812,
+  "pane_tty": "/dev/ttys150",
+  "pane_current_command": "python3.12",
+  "pane_current_path": "~/work/project",
+  "pane_title": "⠇ <prose>",
+  "feno_launcher": " agents-workspace"
+ },
+ "processes": [
+  {
+   "pid": 88812,
+   "ppid": 75568,
+   "pgid": 88812,
+   "tpgid": 88935,
+   "stat": "Ss",
+   "tty": "ttys150",
+   "ucomm": "zsh",
+   "args": "zsh -c _feno_launcher='aw-luna<prose>[feno spawn] %s exited rc=%s after %ss\\n' \"$_feno_launcher\" \"$_feno_rc\" \"$_feno_elapsed\"; sleep 120; fi; exit \"$_feno_rc\""
+  },
+  {
+   "pid": 88828,
+   "ppid": 88812,
+   "pgid": 88828,
+   "tpgid": 88935,
+   "stat": "S",
+   "tty": "ttys150",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -lic cd \"$1<prose>high\"' \"$2\" aw-luna ~/work/project Read CLAUDE.md, .agent-memory/MEMORY.md, docs/DUTIES.md, docs/GIT_DUTY.md, docs/STATE.md and docs/OPERATIONS.md. You are the M4 resident Luna, the standing worker and manager. Then wait. The controller deli …<truncated>"
+  },
+  {
+   "pid": 88935,
+   "ppid": 88828,
+   "pgid": 88935,
+   "tpgid": 88935,
+   "stat": "S+",
+   "tty": "ttys150",
+   "ucomm": "python3.12",
+   "args": "~/.local/share/atlas-orbit/host/.venv/bin/python ~/.local/share/atlas-orbit/host/codex_private.py --launch cy -m gpt-6-luna -c model_reasoning_effort=\"high\" Read CLAUDE.md, .agent-memory/MEMORY.md, docs/DUTIES.md, docs/GIT_DUTY.md, docs/STATE.md and docs/OPERATIONS.md. You are the M4 resident Luna, …<truncated>"
+  },
+  {
+   "pid": 89823,
+   "ppid": 88935,
+   "pgid": 88935,
+   "tpgid": 88935,
+   "stat": "S+",
+   "tty": "ttys150",
+   "ucomm": "codex",
+   "args": "~/.local/share/fnm/node-versions/v22.23.4/installation/lib/node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex --remote unix:///tmp/orbit-cx-9c87f2150f/engine.sock -c model_reasoning_effort=\"high<prose>high\" -c model_reasoning_effort=\"high\" resume …<truncated>"
+  },
+  {
+   "pid": 75568,
+   "ppid": 1,
+   "pgid": 75568,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux",
+   "args": "~/.local/opt/tmux-3.5a-jemalloc/bin/tmux -S /private/tmp/tmux-501/fenok-next -f ~/.local/state/fenok-next/fenok-next-0009e7f0cf8c/tmux.conf new-session -d -s fenok-next -c ~/work/project",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "codex",
+ "evidence": "pane pid 88812 ucomm=zsh argv0='zsh'; @feno_launcher=' agents-workspace'",
+ "agent_families": [
+  "codex"
+ ],
+ "agent_process_count": 1
+}

@@ -1,0 +1,11 @@
+flowchart TD
+  P["창 %7<br/><b>zsh</b>"] --> W["zsh -lic 'ccd …'<br/>실행기: 벗겨냄"]
+  W --> O["<b>claude</b><br/>--resume 8f2c…<br/>주인 ✓"]
+  O --> H1["codex<br/>mcp-server<br/>보조 프로세스<br/>→ 제외"]
+  O --> H2["zsh -c<br/>'codex exec …'<br/>주인이 시킨 작업<br/>→ 제외"]
+  O --> H3["ugrep<br/>(이름 2.1.329)<br/>버전 숫자 이름<br/>→ 근거 아님"]
+  S["exec -a claude<br/>bash<br/>이름만 바꾼 셸"] -.- X["에이전트 아님"]
+  classDef own fill:#dcfce7,stroke:#16a34a,color:#14532d
+  classDef skip fill:#f1f5f9,stroke:#94a3b8,color:#475569
+  class O own
+  class H1,H2,H3,X skip

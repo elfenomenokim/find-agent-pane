@@ -1,0 +1,78 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/tmux-501/migration-20260927/fenok-next",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%111",
+  "session": "fenok-next",
+  "window_index": "8",
+  "pane_index": "1",
+  "pane_pid": 90698,
+  "pane_tty": "/dev/ttys004",
+  "pane_current_command": "2.1.329",
+  "pane_current_path": "~/work/project",
+  "pane_title": "✳ <prose>",
+  "feno_launcher": "mccd"
+ },
+ "processes": [
+  {
+   "pid": 90698,
+   "ppid": 96732,
+   "pgid": 90698,
+   "tpgid": 90698,
+   "stat": "Ss+",
+   "tty": "ttys004",
+   "ucomm": "2.1.329",
+   "args": "claude --dangerously-skip-permissions --model opus[1m] --settings ~/.cache/atlas-host/claude-hooks-3b10a915-4097-4586-9e46-9d3278d74098.json --effort medium --session-id 3b10a915-4097-4586-9e46-9d3278d74098"
+  },
+  {
+   "pid": 19966,
+   "ppid": 90698,
+   "pgid": 90698,
+   "tpgid": 90698,
+   "stat": "S+",
+   "tty": "ttys004",
+   "ucomm": "caffeinate",
+   "args": "caffeinate -i -t 300"
+  },
+  {
+   "pid": 65993,
+   "ppid": 90698,
+   "pgid": 90698,
+   "tpgid": 90698,
+   "stat": "S+",
+   "tty": "ttys004",
+   "ucomm": "node",
+   "args": "node ~/.local/state/fnm_multishells/90784_1795145283492/bin/pyright-langserver --stdio"
+  },
+  {
+   "pid": 91134,
+   "ppid": 90698,
+   "pgid": 90698,
+   "tpgid": 90698,
+   "stat": "S+",
+   "tty": "ttys004",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"/bin/bash\",\"args\":[\"-c\",<prose>],\"identity_files\":[\"~/.local/share/feno/atlas-reverse/rea/bin/rea\",\"~/.local/share/feno/atlas-reverse/env …<truncated>"
+  },
+  {
+   "pid": 96732,
+   "ppid": 1,
+   "pgid": 96732,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux",
+   "args": "~/.local/opt/tmux-3.5a-jemalloc/bin/tmux -S /private/tmp/tmux-501/migration-20260927/fenok-next -f ~/.local/state/fenok-next-migration/20260927/runtime/fenok-next-a49e20d54282/tmux.conf new-session -d -s fenok-next -c ~/work/project",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "claude",
+ "evidence": "pane pid 90698 ucomm=2.1.329 argv0='claude'; @feno_launcher='mccd'",
+ "agent_families": [
+  "claude"
+ ],
+ "agent_process_count": 1
+}

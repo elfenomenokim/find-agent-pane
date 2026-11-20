@@ -1,0 +1,46 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/fx.kuVYtd/tmux-501/fenok-next",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "main",
+  "window_index": "0",
+  "pane_index": "0",
+  "pane_pid": 14040,
+  "pane_tty": "/dev/ttys015",
+  "pane_current_command": "bash",
+  "pane_current_path": "~/work/project",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 14040,
+   "ppid": 14039,
+   "pgid": 14040,
+   "tpgid": 14040,
+   "stat": "Ss+",
+   "tty": "ttys015",
+   "ucomm": "bash",
+   "args": "claude --noprofile --norc -i"
+  },
+  {
+   "pid": 14039,
+   "ppid": 1,
+   "pgid": 14039,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux-3.5a",
+   "args": "tmux -L fenok-next new-session -d -s main exec -a claude bash --noprofile --norc -i",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "shell",
+ "evidence": "pane pid 14040 ucomm=bash argv0='claude'; argv0 spoofed (exec -a): ucomm differs from argv0",
+ "agent_families": [],
+ "agent_process_count": 0
+}

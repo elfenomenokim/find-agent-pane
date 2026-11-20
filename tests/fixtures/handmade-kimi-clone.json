@@ -1,0 +1,44 @@
+{
+ "host": "handmade",
+ "os": "Linux",
+ "pane": {
+  "pane_id": "%1",
+  "pane_pid": 100,
+  "pane_tty": "/dev/pts/3"
+ },
+ "processes": [
+  {
+   "pid": 100,
+   "ppid": 1,
+   "pgid": 100,
+   "tpgid": 200,
+   "stat": "Ss",
+   "tty": "pts/3",
+   "ucomm": "zsh",
+   "args": "-zsh"
+  },
+  {
+   "pid": 200,
+   "ppid": 100,
+   "pgid": 200,
+   "tpgid": 200,
+   "stat": "S+",
+   "tty": "pts/3",
+   "ucomm": "kimi-code",
+   "args": "kimi-code -S session_3f2a9b8e-1111-2222-3333-444455556666"
+  },
+  {
+   "pid": 210,
+   "ppid": 200,
+   "pgid": 200,
+   "tpgid": 200,
+   "stat": "S+",
+   "tty": "pts/3",
+   "ucomm": "kimi-code",
+   "args": "kimi-code hook run"
+  }
+ ],
+ "expected_family": "kimi",
+ "evidence": "kimi re-exec: same-executable child is a clone, the parent at pid 200 owns",
+ "expected_owner_pid": 200
+}

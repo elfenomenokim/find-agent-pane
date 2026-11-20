@@ -1,0 +1,118 @@
+{
+ "host": "a1",
+ "os": "Linux 7.0.0-1013-oracle aarch64 (Ubuntu 24.04)",
+ "captured_at": "2026-11-20T17:41:06Z",
+ "socket": "/tmp/tmux-1001/fap",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "fap",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 3143473,
+  "pane_tty": "/dev/pts/0",
+  "pane_current_command": "bash",
+  "pane_current_path": "/tmp/fap-agents/work",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 3143473,
+   "ppid": 3143435,
+   "pgid": 3143473,
+   "tpgid": 3143473,
+   "stat": "Ss+",
+   "tty": "pts/0",
+   "ucomm": "bash",
+   "args": "bash --rcfile /tmp/fap-agents/rc-codex.sh -i"
+  },
+  {
+   "pid": 3143477,
+   "ppid": 3143473,
+   "pgid": 3143473,
+   "tpgid": 3143473,
+   "stat": "Sl+",
+   "tty": "pts/0",
+   "ucomm": "codex",
+   "args": "/tmp/fap-agents/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/bin/codex"
+  },
+  {
+   "pid": 3143589,
+   "ppid": 3143477,
+   "pgid": 3143589,
+   "tpgid": -1,
+   "stat": "Ssl",
+   "tty": "?",
+   "ucomm": "codex",
+   "args": "~/.codex/packages/app-server-daemon/releases/0.171.0-aarch64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon"
+  },
+  {
+   "pid": 3143672,
+   "ppid": 3143477,
+   "pgid": 3143672,
+   "tpgid": -1,
+   "stat": "Ssl",
+   "tty": "?",
+   "ucomm": "codex",
+   "args": "~/.codex/packages/app-server-daemon/releases/0.171.0-aarch64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop"
+  },
+  {
+   "pid": 3143734,
+   "ppid": 3143589,
+   "pgid": 3143589,
+   "tpgid": -1,
+   "stat": "Sl",
+   "tty": "?",
+   "ucomm": "git",
+   "args": "/usr/bin/git -c safe.bareRepository=explicit -C ~/.codex/.tmp/plugins-clone-ooSTUO fetch --depth 1 --no-tags https://github.com/openai/plugins.git +981b02c0c44058b595f3b4180002c3ae3c806d40:refs/codex/curated-sync"
+  },
+  {
+   "pid": 3143735,
+   "ppid": 3143734,
+   "pgid": 3143589,
+   "tpgid": -1,
+   "stat": "S",
+   "tty": "?",
+   "ucomm": "git",
+   "args": "/usr/lib/git-core/git remote-https https://github.com/openai/plugins.git https://github.com/openai/plugins.git"
+  },
+  {
+   "pid": 3143746,
+   "ppid": 3143734,
+   "pgid": 3143589,
+   "tpgid": -1,
+   "stat": "S",
+   "tty": "?",
+   "ucomm": "git",
+   "args": "/usr/lib/git-core/git --shallow-file ~/.codex/.tmp/plugins-clone-ooSTUO/.git/shallow.lock index-pack --stdin --fix-thin --keep=fetch-pack 3143734 on linux-host --pack_header=2,7375"
+  },
+  {
+   "pid": 3143736,
+   "ppid": 3143735,
+   "pgid": 3143589,
+   "tpgid": -1,
+   "stat": "R",
+   "tty": "?",
+   "ucomm": "git-remote-http",
+   "args": "/usr/lib/git-core/git-remote-https https://github.com/openai/plugins.git https://github.com/openai/plugins.git"
+  },
+  {
+   "pid": 3143435,
+   "ppid": 1,
+   "pgid": 3143435,
+   "tpgid": -1,
+   "stat": "Ss",
+   "tty": "?",
+   "ucomm": "tmux: server",
+   "args": "tmux -L fap new-session -d -s fap -n codex -x 200 -y 50 -c /tmp/fap-agents/work bash --rcfile /tmp/fap-agents/rc-codex.sh -i",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "codex",
+ "evidence": "pane pid 3143473 ucomm=bash; owner child ucomm=codex argv0='/tmp/fap-agents/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/bin/codex' (vendor ELF; no node shim parent seen from t>=1s); spawns detached daemons (tty ?, tpgid -1, still ppid=codex): 'codex app-server --listen unix:// --managed-daemon' and 'codex app-server daemon pid-update-loop', plus transient 'codex --version' and git fetches of openai/plugins; those daemon children are same-exe codex clones of the TUI",
+ "agent_families": [
+  "codex"
+ ],
+ "agent_process_count": 1
+}

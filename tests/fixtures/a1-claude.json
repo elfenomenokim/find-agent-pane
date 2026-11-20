@@ -1,0 +1,58 @@
+{
+ "host": "a1",
+ "os": "Linux 7.0.0-1013-oracle aarch64 (Ubuntu 24.04)",
+ "captured_at": "2026-11-20T17:41:06Z",
+ "socket": "/tmp/tmux-1001/fap",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "fap",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 3144045,
+  "pane_tty": "/dev/pts/0",
+  "pane_current_command": "bash",
+  "pane_current_path": "/tmp/fap-agents/work",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 3144045,
+   "ppid": 3144007,
+   "pgid": 3144045,
+   "tpgid": 3144045,
+   "stat": "Ss+",
+   "tty": "pts/0",
+   "ucomm": "bash",
+   "args": "bash --rcfile /tmp/fap-agents/rc-claude.sh -i"
+  },
+  {
+   "pid": 3144047,
+   "ppid": 3144045,
+   "pgid": 3144045,
+   "tpgid": 3144045,
+   "stat": "Sl+",
+   "tty": "pts/0",
+   "ucomm": "claude",
+   "args": "claude"
+  },
+  {
+   "pid": 3144007,
+   "ppid": 1,
+   "pgid": 3144007,
+   "tpgid": -1,
+   "stat": "Ss",
+   "tty": "?",
+   "ucomm": "tmux: server",
+   "args": "tmux -L fap new-session -d -s fap -n claude -x 200 -y 50 -c /tmp/fap-agents/work bash --rcfile /tmp/fap-agents/rc-claude.sh -i",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "claude",
+ "evidence": "pane pid 3144045 ucomm=bash; owner child ucomm=claude argv0='claude' (npm bin -> @anthropic-ai/claude-code/bin/claude.exe, ELF); on Linux ucomm is the name 'claude', not a version string; no helpers at first screen ('Not logged in' screen)",
+ "agent_families": [
+  "claude"
+ ],
+ "agent_process_count": 1
+}

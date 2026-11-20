@@ -1,0 +1,58 @@
+{
+ "host": "a1",
+ "os": "Linux 7.0.0-1013-oracle aarch64 (Ubuntu 24.04)",
+ "captured_at": "2026-11-20T17:41:06Z",
+ "socket": "/tmp/tmux-1001/fap",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "fap",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 3141437,
+  "pane_tty": "/dev/pts/0",
+  "pane_current_command": "bash",
+  "pane_current_path": "/tmp/fap-agents/work",
+  "pane_title": "OpenCode",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 3141437,
+   "ppid": 3141399,
+   "pgid": 3141437,
+   "tpgid": 3141437,
+   "stat": "Ss+",
+   "tty": "pts/0",
+   "ucomm": "bash",
+   "args": "bash --rcfile /tmp/fap-agents/rc-opencode.sh -i"
+  },
+  {
+   "pid": 3141440,
+   "ppid": 3141437,
+   "pgid": 3141437,
+   "tpgid": 3141437,
+   "stat": "Sl+",
+   "tty": "pts/0",
+   "ucomm": "opencode",
+   "args": "opencode"
+  },
+  {
+   "pid": 3141399,
+   "ppid": 1,
+   "pgid": 3141399,
+   "tpgid": -1,
+   "stat": "Ss",
+   "tty": "?",
+   "ucomm": "tmux: server",
+   "args": "tmux -L fap new-session -d -s fap -n opencode -x 200 -y 50 -c /tmp/fap-agents/work bash --rcfile /tmp/fap-agents/rc-opencode.sh -i",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "opencode",
+ "evidence": "pane pid 3141437 ucomm=bash; owner child ucomm=opencode argv0='opencode' (npm bin -> opencode-ai/bin/opencode.exe, ELF); no re-exec; transient helper 'npm list' in its own session (tty ?, tpgid -1)",
+ "agent_families": [
+  "opencode"
+ ],
+ "agent_process_count": 1
+}

@@ -1,0 +1,46 @@
+{
+ "host": "m4",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:15:25Z",
+ "socket": "default",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%7",
+  "session": "work",
+  "window_index": "2",
+  "pane_index": "1",
+  "pane_pid": 63258,
+  "pane_tty": "/dev/ttys002",
+  "pane_current_command": "zsh",
+  "pane_current_path": "~/work/project",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 63258,
+   "ppid": 1017,
+   "pgid": 63258,
+   "tpgid": 63258,
+   "stat": "Ss+",
+   "tty": "ttys002",
+   "ucomm": "zsh",
+   "args": "-zsh"
+  },
+  {
+   "pid": 1017,
+   "ppid": 1,
+   "pgid": 1017,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux",
+   "args": "~/.local/opt/tmux-3.5a-jemalloc/bin/tmux new-session -d -s work",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "shell",
+ "evidence": "pane pid 63258 ucomm=zsh argv0='-zsh'",
+ "agent_families": [],
+ "agent_process_count": 0
+}

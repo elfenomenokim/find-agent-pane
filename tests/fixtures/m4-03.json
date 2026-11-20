@@ -1,0 +1,46 @@
+{
+ "host": "m4",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:15:25Z",
+ "socket": "feno-consent-allow",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "feno-consent-allow",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 80720,
+  "pane_tty": "/dev/ttys008",
+  "pane_current_command": "consent-allow",
+  "pane_current_path": "/",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 80720,
+   "ppid": 80584,
+   "pgid": 80720,
+   "tpgid": 80720,
+   "stat": "Ss+",
+   "tty": "ttys008",
+   "ucomm": "consent-allow",
+   "args": "~/.local/libexec/feno-consent-allow/consent-allow --duration 86400"
+  },
+  {
+   "pid": 80584,
+   "ppid": 1,
+   "pgid": 80584,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux",
+   "args": "~/.local/opt/tmux-3.5a-jemalloc/bin/tmux -L feno-consent-allow new-session -d -s feno-consent-allow ~/.local/libexec/feno-consent-allow/consent-allow --duration 86400",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "none",
+ "evidence": "pane pid 80720 ucomm=consent-allow argv0='~/.local/libexec/feno-consent-allow/consent-allow'",
+ "agent_families": [],
+ "agent_process_count": 0
+}

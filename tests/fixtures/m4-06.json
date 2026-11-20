@@ -1,0 +1,68 @@
+{
+ "host": "m4",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:15:25Z",
+ "socket": null,
+ "pane_owned": true,
+ "pane": {
+  "pane_id": null,
+  "session": null,
+  "window_index": null,
+  "pane_index": null,
+  "pane_pid": 83542,
+  "pane_tty": "ttys006",
+  "pane_current_command": null,
+  "pane_current_path": null,
+  "pane_title": null,
+  "feno_launcher": null
+ },
+ "processes": [
+  {
+   "pid": 83542,
+   "ppid": 83467,
+   "pgid": 83542,
+   "tpgid": 83648,
+   "stat": "Ss",
+   "tty": "ttys006",
+   "ucomm": "zsh",
+   "args": "zsh"
+  },
+  {
+   "pid": 83648,
+   "ppid": 83542,
+   "pgid": 83648,
+   "tpgid": 83648,
+   "stat": "S+",
+   "tty": "ttys006",
+   "ucomm": "agy",
+   "args": "~/.local/bin/agy"
+  },
+  {
+   "pid": 83664,
+   "ppid": 83648,
+   "pgid": 83648,
+   "tpgid": 83648,
+   "stat": "S+",
+   "tty": "ttys006",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"ssh\",\"args\":[\"-T\",\"-o\",\"BatchMode=yes\",\"-o\",\"ConnectTimeout=8\",\"m5\",\"source \\\"$HOME/.local/share/feno/atlas-reverse/env.sh\\\"; exec \\\"$HOM …<truncated>"
+  },
+  {
+   "pid": 83467,
+   "ppid": 1,
+   "pgid": 83467,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux",
+   "args": "tmux -L ad2login new-session -d -s ad2login -x 220 -y 50 zsh",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "agy",
+ "evidence": "pane pid 83542 ucomm=zsh argv0='zsh'; tmux server alive but its socket is unreachable, so list-panes cannot see this pane",
+ "agent_families": [
+  "agy"
+ ],
+ "agent_process_count": 1
+}

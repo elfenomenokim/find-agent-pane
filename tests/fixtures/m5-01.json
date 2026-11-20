@@ -1,0 +1,46 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/atlas-host-mistral/cache/tmux/tmux-501/orbit-scratch-c690c184a7",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "scratch-boot",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 18928,
+  "pane_tty": "/dev/ttys010",
+  "pane_current_command": "zsh",
+  "pane_current_path": "~/work/project",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 18928,
+   "ppid": 18873,
+   "pgid": 18928,
+   "tpgid": 18928,
+   "stat": "Ss+",
+   "tty": "ttys010",
+   "ucomm": "zsh",
+   "args": "-zsh"
+  },
+  {
+   "pid": 18873,
+   "ppid": 1,
+   "pgid": 18873,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux-3.5a",
+   "args": "tmux -L orbit-scratch-c690c184a7 new-session -d -s scratch-boot",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "shell",
+ "evidence": "pane pid 18928 ucomm=zsh argv0='-zsh'",
+ "agent_families": [],
+ "agent_process_count": 0
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "find-agent-pane"
+version = "0.1.0"
+description = "List tmux panes with the coding agent that owns each one, from process evidence alone."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["tmux", "coding-agent", "claude-code", "codex", "process-tree", "ai-agents"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: POSIX",
+  "Operating System :: MacOS",
+  "Environment :: Console",
+  "Topic :: Terminals :: Terminal Emulators/X Terminals",
+  "Topic :: System :: Monitoring",
+]
+
+[project.urls]
+Homepage = "https://github.com/elfenomenokim/find-agent-pane"
+Repository = "https://github.com/elfenomenokim/find-agent-pane"
+Issues = "https://github.com/elfenomenokim/find-agent-pane/issues"
+
+[project.scripts]
+find-agent-pane = "find_agent_pane.cli:main"
+
+[tool.setuptools]
+packages = ["find_agent_pane"]
+
+[tool.setuptools.package-data]
+find_agent_pane = ["agents.json"]

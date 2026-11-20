@@ -1,0 +1,44 @@
+{
+ "host": "handmade",
+ "os": "Linux",
+ "pane": {
+  "pane_id": "%1",
+  "pane_pid": 100,
+  "pane_tty": "/dev/pts/7"
+ },
+ "processes": [
+  {
+   "pid": 100,
+   "ppid": 1,
+   "pgid": 100,
+   "tpgid": 200,
+   "stat": "Ss",
+   "tty": "pts/7",
+   "ucomm": "bash",
+   "args": "-bash"
+  },
+  {
+   "pid": 200,
+   "ppid": 100,
+   "pgid": 200,
+   "tpgid": 200,
+   "stat": "S+",
+   "tty": "pts/7",
+   "ucomm": "node",
+   "args": "node /usr/lib/node_modules/@openai/codex/bin/codex.js"
+  },
+  {
+   "pid": 210,
+   "ppid": 200,
+   "pgid": 200,
+   "tpgid": 200,
+   "stat": "S+",
+   "tty": "pts/7",
+   "ucomm": "codex",
+   "args": "/usr/lib/node_modules/@openai/codex/vendor/x86_64-unknown-linux-musl/codex/codex"
+  }
+ ],
+ "expected_family": "codex",
+ "evidence": "node shim -> native codex: the binary owns",
+ "expected_owner_pid": 210
+}

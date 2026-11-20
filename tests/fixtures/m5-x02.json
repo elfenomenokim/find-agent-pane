@@ -1,0 +1,89 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": null,
+ "pane_owned": false,
+ "pane": null,
+ "processes": [
+  {
+   "pid": 31532,
+   "ppid": 31531,
+   "pgid": 31385,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "2.1.329",
+   "args": "claude --dangerously-skip-permissions --model sonnet --effort medium -p --input-format stream-json --output-format stream-json --verbose --include-partial-messages --replay-user-messages --permission-prompt-tool stdio --mcp-config {\"mcpServers\": {\"orbit_session\": {\"type\": \"sdk\", \"name\": \"orbit_sessi …<truncated>"
+  },
+  {
+   "pid": 31556,
+   "ppid": 31532,
+   "pgid": 31385,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"/bin/bash\",\"args\":[\"-c\",<prose>],\"identity_files\":[\"~/.local/share/feno/atlas-reverse/rea/bin/rea\",\"~/.local/share/feno/atlas-reverse/env …<truncated>"
+  },
+  {
+   "pid": 49529,
+   "ppid": 31532,
+   "pgid": 49529,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude/shell-snapshots/snapshot-zsh-1795194900208-jmnydf.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unsetenv'; \\ …<truncated>"
+  },
+  {
+   "pid": 49531,
+   "ppid": 49529,
+   "pgid": 49529,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "ssh",
+   "args": "ssh -o BatchMode=yes m4 cd ~/work/project && C=$(ops/review-session.sh cookie --ttl 15m --sub review-r69 2>/dev/null | tail -1); mkdir -p /tmp/r69-div; for t in PEP HD MAIN COST; do curl -sL -H \"Cookie: $C\" -o /tmp/r69-div/ …<truncated>"
+  },
+  {
+   "pid": 31531,
+   "ppid": 31385,
+   "pgid": 31385,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -lic if ! command -v ccd >/dev/null 2>&1; then . ~/work/project && . ~/work/project || exit 1; fi; expor …<truncated>",
+   "role": "parent"
+  },
+  {
+   "pid": 31385,
+   "ppid": 20635,
+   "pgid": 31385,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -lic if ! command -v ccd >/dev/null 2>&1; then . ~/work/project && . ~/work/project || exit 1; fi; expor …<truncated>",
+   "role": "parent"
+  },
+  {
+   "pid": 20635,
+   "ppid": 1,
+   "pgid": 20635,
+   "tpgid": 0,
+   "stat": "Rs",
+   "tty": "??",
+   "ucomm": "python3.12",
+   "args": "~/.local/share/atlas-orbit/host/.venv/bin/python ~/.local/share/atlas-orbit/engine/claude_engine.py serve",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "claude",
+ "agent_families": [
+  "claude"
+ ],
+ "agent_process_count": 1,
+ "evidence": "root 31532 ucomm=2.1.329; not a pane: headless claude -p stream-json spawned by the Orbit engine through nested zsh -lic wrappers"
+}

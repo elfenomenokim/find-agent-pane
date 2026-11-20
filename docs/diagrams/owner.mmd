@@ -1,0 +1,11 @@
+flowchart TD
+  P["pane %7<br/><b>zsh</b>"] --> W["zsh -lic 'ccd …'<br/>launcher: unwrapped"]
+  W --> O["<b>claude</b><br/>--resume 8f2c…<br/>owner ✓"]
+  O --> H1["codex<br/>mcp-server<br/>helper<br/>→ ignored"]
+  O --> H2["zsh -c<br/>'codex exec …'<br/>the agent's work<br/>→ ignored"]
+  O --> H3["ugrep<br/>(ucomm 2.1.329)<br/>version-shaped name<br/>→ not evidence"]
+  S["exec -a claude<br/>bash<br/>shell with a spoofed name"] -.- X["not an agent"]
+  classDef own fill:#dcfce7,stroke:#16a34a,color:#14532d
+  classDef skip fill:#f1f5f9,stroke:#94a3b8,color:#475569
+  class O own
+  class H1,H2,H3,X skip

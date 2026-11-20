@@ -1,0 +1,43 @@
+{
+ "host": "handmade",
+ "os": "Linux",
+ "pane": {
+  "pane_id": "%1",
+  "pane_pid": 100,
+  "pane_tty": "/dev/pts/5"
+ },
+ "processes": [
+  {
+   "pid": 100,
+   "ppid": 1,
+   "pgid": 100,
+   "tpgid": 100,
+   "stat": "Ss+",
+   "tty": "pts/5",
+   "ucomm": "bash",
+   "args": "-bash"
+  },
+  {
+   "pid": 200,
+   "ppid": 100,
+   "pgid": 200,
+   "tpgid": 100,
+   "stat": "S",
+   "tty": "pts/5",
+   "ucomm": "node",
+   "args": "node /usr/lib/node_modules/@google/gemini-cli/bundle/gemini.js"
+  },
+  {
+   "pid": 300,
+   "ppid": 100,
+   "pgid": 300,
+   "tpgid": 100,
+   "stat": "S",
+   "tty": "pts/5",
+   "ucomm": "aider",
+   "args": "/home/user/.local/bin/aider"
+  }
+ ],
+ "expected_family": "unknown",
+ "evidence": "gemini and aider both live in background jobs: ambiguous"
+}

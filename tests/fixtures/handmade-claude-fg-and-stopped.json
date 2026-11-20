@@ -1,0 +1,44 @@
+{
+ "host": "handmade",
+ "os": "Linux",
+ "pane": {
+  "pane_id": "%1",
+  "pane_pid": 100,
+  "pane_tty": "/dev/pts/4"
+ },
+ "processes": [
+  {
+   "pid": 100,
+   "ppid": 1,
+   "pgid": 100,
+   "tpgid": 300,
+   "stat": "Ss",
+   "tty": "pts/4",
+   "ucomm": "zsh",
+   "args": "-zsh"
+  },
+  {
+   "pid": 200,
+   "ppid": 100,
+   "pgid": 200,
+   "tpgid": 300,
+   "stat": "T",
+   "tty": "pts/4",
+   "ucomm": "2.1.300",
+   "args": "claude"
+  },
+  {
+   "pid": 300,
+   "ppid": 100,
+   "pgid": 300,
+   "tpgid": 300,
+   "stat": "S+",
+   "tty": "pts/4",
+   "ucomm": "2.1.300",
+   "args": "claude --resume 9f0c1d2e-aaaa-bbbb-cccc-ddddeeeeffff"
+  }
+ ],
+ "expected_family": "claude",
+ "evidence": "stopped claude 200 and foreground claude 300: the foreground one owns",
+ "expected_owner_pid": 300
+}

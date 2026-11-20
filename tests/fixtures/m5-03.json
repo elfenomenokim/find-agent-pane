@@ -1,0 +1,46 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/fx.kuVYtd/tmux-501/mona",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "main",
+  "window_index": "0",
+  "pane_index": "0",
+  "pane_pid": 14046,
+  "pane_tty": "/dev/ttys018",
+  "pane_current_command": "bash",
+  "pane_current_path": "~/work/project",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 14046,
+   "ppid": 14044,
+   "pgid": 14046,
+   "tpgid": 14046,
+   "stat": "Ss+",
+   "tty": "ttys018",
+   "ucomm": "bash",
+   "args": "claude --noprofile --norc -i"
+  },
+  {
+   "pid": 14044,
+   "ppid": 1,
+   "pgid": 14044,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux-3.5a",
+   "args": "tmux -L mona new-session -d -s main exec -a claude bash --noprofile --norc -i",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "shell",
+ "evidence": "pane pid 14046 ucomm=bash argv0='claude'; argv0 spoofed (exec -a): ucomm differs from argv0",
+ "agent_families": [],
+ "agent_process_count": 0
+}

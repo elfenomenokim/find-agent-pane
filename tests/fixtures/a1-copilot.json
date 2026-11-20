@@ -1,0 +1,68 @@
+{
+ "host": "a1",
+ "os": "Linux 7.0.0-1013-oracle aarch64 (Ubuntu 24.04)",
+ "captured_at": "2026-11-20T17:41:06Z",
+ "socket": "/tmp/tmux-1001/fap",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "fap",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 3142751,
+  "pane_tty": "/dev/pts/0",
+  "pane_current_command": "bash",
+  "pane_current_path": "/tmp/fap-agents/work",
+  "pane_title": "GitHub Copilot",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 3142751,
+   "ppid": 3142713,
+   "pgid": 3142751,
+   "tpgid": 3142751,
+   "stat": "Ss+",
+   "tty": "pts/0",
+   "ucomm": "bash",
+   "args": "bash --rcfile /tmp/fap-agents/rc-copilot.sh -i"
+  },
+  {
+   "pid": 3142754,
+   "ppid": 3142751,
+   "pgid": 3142751,
+   "tpgid": 3142751,
+   "stat": "Sl+",
+   "tty": "pts/0",
+   "ucomm": "node",
+   "args": "node /tmp/fap-agents/node_modules/.bin/copilot"
+  },
+  {
+   "pid": 3142784,
+   "ppid": 3142754,
+   "pgid": 3142751,
+   "tpgid": 3142751,
+   "stat": "Sl+",
+   "tty": "pts/0",
+   "ucomm": "MainThread",
+   "args": "/tmp/fap-agents/node_modules/@github/copilot-linux-arm64/copilot"
+  },
+  {
+   "pid": 3142713,
+   "ppid": 1,
+   "pgid": 3142713,
+   "tpgid": -1,
+   "stat": "Ss",
+   "tty": "?",
+   "ucomm": "tmux: server",
+   "args": "tmux -L fap new-session -d -s fap -n copilot -x 200 -y 50 -c /tmp/fap-agents/work bash --rcfile /tmp/fap-agents/rc-copilot.sh -i",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "copilot",
+ "evidence": "pane pid 3142751 ucomm=bash; owner chain ucomm=node argv0='node /tmp/fap-agents/node_modules/.bin/copilot' (npm-loader.js shim) -> child ucomm=MainThread '/tmp/fap-agents/node_modules/@github/copilot-linux-arm64/copilot' (native; thread-name ucomm, argv0 path ends in /copilot); transient helper '/usr/bin/gh auth token --hostname github.com'",
+ "agent_families": [
+  "copilot"
+ ],
+ "agent_process_count": 1
+}

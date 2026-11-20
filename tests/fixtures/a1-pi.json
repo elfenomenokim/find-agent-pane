@@ -1,0 +1,58 @@
+{
+ "host": "a1",
+ "os": "Linux 7.0.0-1013-oracle aarch64 (Ubuntu 24.04)",
+ "captured_at": "2026-11-20T17:41:06Z",
+ "socket": "/tmp/tmux-1001/fap",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "fap",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 3144367,
+  "pane_tty": "/dev/pts/0",
+  "pane_current_command": "bash",
+  "pane_current_path": "/tmp/fap-agents/work",
+  "pane_title": "π - work",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 3144367,
+   "ppid": 3144329,
+   "pgid": 3144367,
+   "tpgid": 3144367,
+   "stat": "Ss+",
+   "tty": "pts/0",
+   "ucomm": "bash",
+   "args": "bash --rcfile /tmp/fap-agents/rc-pi.sh -i"
+  },
+  {
+   "pid": 3144370,
+   "ppid": 3144367,
+   "pgid": 3144367,
+   "tpgid": 3144367,
+   "stat": "Sl+",
+   "tty": "pts/0",
+   "ucomm": "pi",
+   "args": "pi"
+  },
+  {
+   "pid": 3144329,
+   "ppid": 1,
+   "pgid": 3144329,
+   "tpgid": -1,
+   "stat": "Ss",
+   "tty": "?",
+   "ucomm": "tmux: server",
+   "args": "tmux -L fap new-session -d -s fap -n pi -x 200 -y 50 -c /tmp/fap-agents/work bash --rcfile /tmp/fap-agents/rc-pi.sh -i",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "pi",
+ "evidence": "pane pid 3144367 ucomm=bash; owner child ucomm=pi argv0='pi' (node script dist/bundle/cli.js; process title rewritten to 'pi', so ucomm/argv0 are 'pi' not 'node'); no helpers",
+ "agent_families": [
+  "pi"
+ ],
+ "agent_process_count": 1
+}

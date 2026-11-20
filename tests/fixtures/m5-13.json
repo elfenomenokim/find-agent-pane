@@ -1,0 +1,168 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/tmux-501/migration-20260927/fenok-next",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%104",
+  "session": "fenok-next",
+  "window_index": "6",
+  "pane_index": "1",
+  "pane_pid": 22292,
+  "pane_tty": "/dev/ttys025",
+  "pane_current_command": "2.1.328",
+  "pane_current_path": "~/work/project",
+  "pane_title": "✳ Claude Code",
+  "feno_launcher": "mccd"
+ },
+ "processes": [
+  {
+   "pid": 22292,
+   "ppid": 96732,
+   "pgid": 22292,
+   "tpgid": 22292,
+   "stat": "Ss+",
+   "tty": "ttys025",
+   "ucomm": "2.1.328",
+   "args": "claude --dangerously-skip-permissions --model opus[1m] --settings ~/.cache/atlas-host/claude-hooks-1caa9693-af8e-4224-9444-fc56026d7d6f.json --effort medium --session-id 1caa9693-af8e-4224-9444-fc56026d7d6f"
+  },
+  {
+   "pid": 22537,
+   "ppid": 22292,
+   "pgid": 22292,
+   "tpgid": 22292,
+   "stat": "S+",
+   "tty": "ttys025",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"/bin/bash\",\"args\":[\"-c\",<prose>],\"identity_files\":[\"~/.local/share/feno/atlas-reverse/rea/bin/rea\",\"~/.local/share/feno/atlas-reverse/env …<truncated>"
+  },
+  {
+   "pid": 28435,
+   "ppid": 22292,
+   "pgid": 22292,
+   "tpgid": 22292,
+   "stat": "S+",
+   "tty": "ttys025",
+   "ucomm": "node",
+   "args": "node ~/.local/state/fnm_multishells/22378_1795098841153/bin/pyright-langserver --stdio"
+  },
+  {
+   "pid": 33453,
+   "ppid": 22292,
+   "pgid": 22292,
+   "tpgid": 22292,
+   "stat": "S+",
+   "tty": "ttys025",
+   "ucomm": "caffeinate",
+   "args": "caffeinate -i -t 300"
+  },
+  {
+   "pid": 47479,
+   "ppid": 22292,
+   "pgid": 47479,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098852002-8iz1vk.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 47834,
+   "ppid": 47479,
+   "pgid": 47834,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "gtimeout",
+   "args": "timeout 28 python3 ~/work/project --mode new --id SS-WB-BENCH-UX2C --body-file /tmp/ssb/UX2.md --scope ~/work/project …<truncated>"
+  },
+  {
+   "pid": 47836,
+   "ppid": 47834,
+   "pgid": 47834,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "python3.12",
+   "args": "~/.pyenv/versions/3.12.8/bin/python3 ~/work/project --mode new --id SS-WB-BENCH-UX2C --body-file /tmp/ssb/UX2.md --scope ~/work/project …<truncated>"
+  },
+  {
+   "pid": 48602,
+   "ppid": 47836,
+   "pgid": 47834,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "bash",
+   "args": "bash ~/.feno/handoff/current/scripts/fh.sh worker queue --id codex:cy:01a1f9f5-ab33-76d0-a7b7-e8bce4ef071c --file /var/folders/x4/wf3_04gx2rxc1mvwv28v3vtc0000gn/T/tmpvzblvo3i.json --request-id SS-WB-BENCH-UX2C"
+  },
+  {
+   "pid": 48631,
+   "ppid": 48602,
+   "pgid": 47834,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "python3.12",
+   "args": "python3 ~/.feno/handoff/current/lib/worker.py queue --id codex:cy:01a1f9f5-ab33-76d0-a7b7-e8bce4ef071c --file /var/folders/x4/wf3_04gx2rxc1mvwv28v3vtc0000gn/T/tmpvzblvo3i.json --request-id SS-WB-BENCH-UX2C"
+  },
+  {
+   "pid": 48841,
+   "ppid": 48631,
+   "pgid": 47834,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "bash",
+   "args": "bash ~/.feno/handoff/current/scripts/fh.sh send @/var/folders/x4/wf3_04gx2rxc1mvwv28v3vtc0000gn/T/fh-worker-queue-7lcnjatu/task.txt --type task --alias orbit:codex:cy:01a1f9f5-ab33-76d0-a7b7-e8bce4ef071c --scope-paths ~/work/project …<truncated>"
+  },
+  {
+   "pid": 50721,
+   "ppid": 48841,
+   "pgid": 47834,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "bash",
+   "args": "bash ~/.feno/handoff/current/scripts/fh.sh send @/var/folders/x4/wf3_04gx2rxc1mvwv28v3vtc0000gn/T/fh-worker-queue-7lcnjatu/task.txt --type task --alias orbit:codex:cy:01a1f9f5-ab33-76d0-a7b7-e8bce4ef071c --scope-paths ~/work/project …<truncated>"
+  },
+  {
+   "pid": 50722,
+   "ppid": 50721,
+   "pgid": 47834,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "python3.12",
+   "args": "python3 ~/.feno/handoff/current/lib/orbit-send.py send --mail ~/.local/state/fenok-next-migration/20260927/runtime/fenok-next-a49e20d54282/handoff/mail/agents-workspace-bb2a9ecca3/mail_20261121-021636_fh-20261121-122-cc-f4f128ca_orbit-codex-cy-01a1f9f5-ab33-76d0-a7b7-e8bce4ef071c_p0_49628-20587.json …<truncated>"
+  },
+  {
+   "pid": 47835,
+   "ppid": 47479,
+   "pgid": 47479,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "2.1.328",
+   "args": "ugrep -G --ignore-files --hidden -I --encoding=UTF-8 --exclude-dir=.git --exclude-dir=.svn --exclude-dir=.hg --exclude-dir=.bzr --exclude-dir=.jj --exclude-dir=.sl assigned"
+  },
+  {
+   "pid": 96732,
+   "ppid": 1,
+   "pgid": 96732,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux",
+   "args": "~/.local/opt/tmux-3.5a-jemalloc/bin/tmux -S /private/tmp/tmux-501/migration-20260927/fenok-next -f ~/.local/state/fenok-next-migration/20260927/runtime/fenok-next-a49e20d54282/tmux.conf new-session -d -s fenok-next -c ~/work/project",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "claude",
+ "evidence": "non-agent descendant 47835 carries the agent version string as ucomm (ucomm is unreliable); pane pid 22292 ucomm=2.1.328 argv0='claude'; @feno_launcher='mccd'",
+ "agent_families": [
+  "claude"
+ ],
+ "agent_process_count": 1
+}

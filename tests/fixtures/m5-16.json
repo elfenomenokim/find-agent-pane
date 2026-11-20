@@ -1,0 +1,78 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/tmux-501/mona",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%184",
+  "session": "mona",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 76706,
+  "pane_tty": "/dev/ttys003",
+  "pane_current_command": "2.1.329",
+  "pane_current_path": "~/work/project",
+  "pane_title": "✳ Claude Code",
+  "feno_launcher": "ccd"
+ },
+ "processes": [
+  {
+   "pid": 76706,
+   "ppid": 961,
+   "pgid": 76706,
+   "tpgid": 76706,
+   "stat": "Ss+",
+   "tty": "ttys003",
+   "ucomm": "2.1.329",
+   "args": "claude --dangerously-skip-permissions --model opus[1m] --settings ~/.cache/atlas-host/claude-hooks-dc860ece-9447-4679-9afe-ffc73238769d.json --effort medium --session-id dc860ece-9447-4679-9afe-ffc73238769d"
+  },
+  {
+   "pid": 76855,
+   "ppid": 76706,
+   "pgid": 76706,
+   "tpgid": 76706,
+   "stat": "S+",
+   "tty": "ttys003",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"/bin/bash\",\"args\":[\"-c\",<prose>],\"identity_files\":[\"~/.local/share/feno/atlas-reverse/rea/bin/rea\",\"~/.local/share/feno/atlas-reverse/env …<truncated>"
+  },
+  {
+   "pid": 80121,
+   "ppid": 76706,
+   "pgid": 80121,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude/shell-snapshots/snapshot-zsh-1795134849800-0s8cxs.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unsetenv'; \\ …<truncated>"
+  },
+  {
+   "pid": 49038,
+   "ppid": 80121,
+   "pgid": 80121,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 10"
+  },
+  {
+   "pid": 961,
+   "ppid": 1,
+   "pgid": 961,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux-3.5a",
+   "args": "~/.local/bin/tmux-3.5a -L mona new-session -d -s mona -e FENO_ACTOR=mona -e CLAUDE_CONFIG_DIR=~/.claude-mona -c ~/work/project",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "claude",
+ "evidence": "pane pid 76706 ucomm=2.1.329 argv0='claude'; @feno_launcher='ccd'",
+ "agent_families": [
+  "claude"
+ ],
+ "agent_process_count": 1
+}

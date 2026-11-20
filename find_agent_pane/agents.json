@@ -1,0 +1,341 @@
+{
+  "schema": "find-agent-pane.agents/1",
+  "note": "Executable identity per agent family. evidence: measured = seen in a live pane (our hosts, or installed and launched on a Linux test host 2026-11-21); registry = package metadata only. Entry patterns match the script a generic runtime (node, bun, deno, python) runs.",
+  "shells": [
+    "bash",
+    "sh",
+    "zsh",
+    "dash",
+    "fish",
+    "ksh",
+    "tcsh",
+    "csh",
+    "nu",
+    "elvish",
+    "xonsh"
+  ],
+  "runtimes": [
+    "node",
+    "nodejs",
+    "bun",
+    "deno",
+    "python",
+    "python3"
+  ],
+  "tool_runtimes": [
+    "mcp/server",
+    "computer-use",
+    "cua_node",
+    "node_repl",
+    "skycomputeruse",
+    "codex-code-mode-host",
+    "codex-code-mode"
+  ],
+  "families": {
+    "claude": {
+      "executables": [
+        "claude",
+        "claude-code",
+        "claude-code-cli",
+        "claude.exe"
+      ],
+      "aliases": [
+        "ccd",
+        "mccd",
+        "ccdo",
+        "ccds",
+        "ccdf",
+        "ccsd"
+      ],
+      "entry_patterns": [
+        "/@anthropic-ai/claude-code/",
+        "/claude-code/cli.js"
+      ],
+      "helper_flags": [
+        "-p",
+        "--print",
+        "--output-format",
+        "--input-format"
+      ],
+      "helper_subcommands": [
+        "mcp"
+      ],
+      "clone_reexec": false,
+      "resume_patterns": [
+        "--resume[= ]([0-9a-f-]{36})",
+        "--session-id[= ]([0-9a-f-]{36})",
+        "(?:^| )-r ([0-9a-f-]{36})"
+      ],
+      "evidence": "measured"
+    },
+    "codex": {
+      "executables": [
+        "codex",
+        "codex-cli"
+      ],
+      "executable_prefixes": [
+        "codex-"
+      ],
+      "aliases": [
+        "cy",
+        "gcy",
+        "gcy2"
+      ],
+      "entry_patterns": [
+        "/@openai/codex/",
+        "/codex/bin/codex",
+        "/codex/cli.js"
+      ],
+      "helper_flags": [],
+      "helper_subcommands": [
+        "--version",
+        "app-server",
+        "exec",
+        "mcp",
+        "mcp-server",
+        "proto",
+        "sandbox"
+      ],
+      "helper_tokens": [
+        "mcp-server",
+        "--mcp-server"
+      ],
+      "clone_reexec": false,
+      "resume_patterns": [
+        "(?:^| )resume ([0-9a-f-]{36})"
+      ],
+      "evidence": "measured"
+    },
+    "kimi": {
+      "executables": [
+        "kimi",
+        "kimi-code",
+        "kimi-code-cli"
+      ],
+      "aliases": [
+        "ky",
+        "mky"
+      ],
+      "entry_patterns": [
+        "/kimi-code/"
+      ],
+      "helper_flags": [],
+      "helper_subcommands": [],
+      "clone_reexec": true,
+      "resume_patterns": [
+        "-S (session_[0-9a-f-]{36})"
+      ],
+      "evidence": "measured"
+    },
+    "agy": {
+      "executables": [
+        "agy",
+        "antigravity",
+        "antigravity-cli"
+      ],
+      "aliases": [
+        "ad",
+        "agy2",
+        "ad2"
+      ],
+      "entry_patterns": [
+        "/antigravity/",
+        "/agy/cli.js"
+      ],
+      "helper_flags": [],
+      "helper_subcommands": [],
+      "clone_reexec": false,
+      "resume_patterns": [
+        "--conversation[= ]([0-9a-zA-Z_-]{8,})"
+      ],
+      "evidence": "measured"
+    },
+    "pi": {
+      "executables": [
+        "pi",
+        "pi-coding-agent",
+        "fpi"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/@earendil-works/pi-coding-agent/",
+        "/pi-coding-agent/",
+        "/pi/dist/bundle/cli.js",
+        "/pi/dist/cli.js",
+        "/pi-runtime/node_modules/.bin/pi"
+      ],
+      "helper_flags": [],
+      "helper_subcommands": [
+        "worker",
+        "subagent",
+        "image-resize-worker"
+      ],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "gemini": {
+      "executables": [
+        "gemini"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/@google/gemini-cli/"
+      ],
+      "helper_flags": [
+        "-p",
+        "--prompt"
+      ],
+      "helper_subcommands": [
+        "mcp"
+      ],
+      "clone_reexec": true,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "qwen": {
+      "executables": [
+        "qwen"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/@qwen-code/qwen-code/"
+      ],
+      "helper_flags": [
+        "-p",
+        "--prompt"
+      ],
+      "helper_subcommands": [
+        "mcp"
+      ],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "opencode": {
+      "executables": [
+        "opencode",
+        "opencode.exe",
+        "opencode2"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/opencode-ai/",
+        "/.opencode/bin/opencode"
+      ],
+      "helper_flags": [],
+      "helper_subcommands": [
+        "run",
+        "serve",
+        "mcp"
+      ],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "amp": {
+      "executables": [
+        "amp",
+        "amp.exe"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/@ampcode/cli/",
+        "/@sourcegraph/amp/",
+        "/.amp/bin/amp"
+      ],
+      "helper_flags": [
+        "-x",
+        "--execute"
+      ],
+      "helper_subcommands": [],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "crush": {
+      "executables": [
+        "crush"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/@charmland/crush/"
+      ],
+      "helper_flags": [],
+      "helper_subcommands": [
+        "run"
+      ],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "copilot": {
+      "executables": [
+        "copilot"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/@github/copilot/"
+      ],
+      "helper_flags": [
+        "-p",
+        "--prompt"
+      ],
+      "helper_subcommands": [],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "aider": {
+      "executables": [
+        "aider"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/aider/__main__.py",
+        "/bin/aider"
+      ],
+      "helper_flags": [
+        "--message",
+        "-m",
+        "--message-file"
+      ],
+      "helper_subcommands": [],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "cursor-agent": {
+      "executables": [
+        "cursor-agent"
+      ],
+      "aliases": [],
+      "entry_patterns": [
+        "/cursor-agent/versions/"
+      ],
+      "helper_flags": [
+        "-p",
+        "--print"
+      ],
+      "helper_subcommands": [],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    },
+    "goose": {
+      "executables": [
+        "goose"
+      ],
+      "aliases": [],
+      "entry_patterns": [],
+      "helper_flags": [],
+      "helper_subcommands": [
+        "run",
+        "mcp"
+      ],
+      "clone_reexec": false,
+      "resume_patterns": [],
+      "evidence": "measured"
+    }
+  }
+}

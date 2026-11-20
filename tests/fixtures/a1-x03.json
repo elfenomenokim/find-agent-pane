@@ -1,0 +1,37 @@
+{
+ "host": "a1",
+ "os": "Linux 7.0.0-1013-oracle aarch64 (Ubuntu 24.04)",
+ "captured_at": "2026-11-20T17:16:30Z",
+ "socket": null,
+ "pane_owned": false,
+ "pane": null,
+ "processes": [
+  {
+   "pid": 1552789,
+   "ppid": 2003699,
+   "pgid": 1552789,
+   "tpgid": -1,
+   "stat": "Ssl",
+   "tty": "?",
+   "ucomm": "codex",
+   "args": "~/.codex-company/packages/app-server-daemon/releases/0.171.0-aarch64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon"
+  },
+  {
+   "pid": 2003699,
+   "ppid": 1,
+   "pgid": 2003699,
+   "tpgid": -1,
+   "stat": "Ssl",
+   "tty": "?",
+   "ucomm": "codex",
+   "args": "~/.codex-company/packages/app-server-daemon/releases/0.171.0-aarch64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "codex",
+ "agent_families": [
+  "codex"
+ ],
+ "agent_process_count": 1,
+ "evidence": "root 1552789 ucomm=codex; not a pane: codex app-server daemon and its listening child, no tty"
+}

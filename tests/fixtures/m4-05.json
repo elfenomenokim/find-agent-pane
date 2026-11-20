@@ -1,0 +1,46 @@
+{
+ "host": "m4",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:15:25Z",
+ "socket": "mona",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%0",
+  "session": "mona",
+  "window_index": "1",
+  "pane_index": "1",
+  "pane_pid": 2157,
+  "pane_tty": "/dev/ttys001",
+  "pane_current_command": "zsh",
+  "pane_current_path": "~/work/project",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 2157,
+   "ppid": 1847,
+   "pgid": 2157,
+   "tpgid": 2157,
+   "stat": "Ss+",
+   "tty": "ttys001",
+   "ucomm": "zsh",
+   "args": "-zsh"
+  },
+  {
+   "pid": 1847,
+   "ppid": 1,
+   "pgid": 1847,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux-3.5a",
+   "args": "~/.local/bin/tmux-3.5a -L mona new-session -d -s mona -e FENO_ACTOR=mona -e CLAUDE_CONFIG_DIR=~/.claude-mona -c ~/work/project",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "shell",
+ "evidence": "pane pid 2157 ucomm=zsh argv0='-zsh'",
+ "agent_families": [],
+ "agent_process_count": 0
+}

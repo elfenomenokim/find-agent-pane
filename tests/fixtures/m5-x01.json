@@ -1,0 +1,77 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": null,
+ "pane_owned": false,
+ "pane": null,
+ "processes": [
+  {
+   "pid": 23029,
+   "ppid": 20635,
+   "pgid": 23029,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "node",
+   "args": "pi"
+  },
+  {
+   "pid": 23087,
+   "ppid": 23029,
+   "pgid": 23087,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"/bin/bash\",\"args\":[\"-c\",<prose>],\"identity_files\":[\"~/.local/share/feno/atlas-reverse/rea/bin/rea\",\"~/.local/share/feno/atlas-reverse/env …<truncated>"
+  },
+  {
+   "pid": 38757,
+   "ppid": 23029,
+   "pgid": 38757,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "bash",
+   "args": "/bin/bash -c cd /tmp/ref-analysis && for h in PlainlyDifficult FascinatingHorror Qxir CasualNavigation BrickImmortar Nischa TheCompoundNews EverythingMoney CharlesSchwab Investopedia; do s=$(yt-dlp --skip-download --print \"%(channel)s|%(channel_follower_count)s|%(uploader_id)s\" \"https://www.youtube. …<truncated>"
+  },
+  {
+   "pid": 47951,
+   "ppid": 38757,
+   "pgid": 38757,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "bash",
+   "args": "/bin/bash -c cd /tmp/ref-analysis && for h in PlainlyDifficult FascinatingHorror Qxir CasualNavigation BrickImmortar Nischa TheCompoundNews EverythingMoney CharlesSchwab Investopedia; do s=$(yt-dlp --skip-download --print \"%(channel)s|%(channel_follower_count)s|%(uploader_id)s\" \"https://www.youtube. …<truncated>"
+  },
+  {
+   "pid": 47952,
+   "ppid": 47951,
+   "pgid": 38757,
+   "tpgid": 0,
+   "stat": "R",
+   "tty": "??",
+   "ucomm": "python3.12",
+   "args": "~/.pyenv/versions/3.12.8/bin/python3 ~/.pyenv/versions/3.12.8/bin/yt-dlp --skip-download --print %(channel)s|%(channel_follower_count)s|%(uploader_id)s https://www.youtube.com/@EverythingMoney/shorts"
+  },
+  {
+   "pid": 20635,
+   "ppid": 1,
+   "pgid": 20635,
+   "tpgid": 0,
+   "stat": "Rs",
+   "tty": "??",
+   "ucomm": "python3.12",
+   "args": "~/.local/share/atlas-orbit/host/.venv/bin/python ~/.local/share/atlas-orbit/engine/claude_engine.py serve",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "pi",
+ "agent_families": [
+  "pi"
+ ],
+ "agent_process_count": 1,
+ "evidence": "root 23029 ucomm=node; not a pane: Orbit-hosted Pi session, no tty, argv[0] is literally \"pi\""
+}

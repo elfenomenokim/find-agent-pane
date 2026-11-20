@@ -1,0 +1,37 @@
+{
+ "host": "a1",
+ "os": "Linux 7.0.0-1013-oracle aarch64 (Ubuntu 24.04)",
+ "captured_at": "2026-11-20T17:16:30Z",
+ "socket": null,
+ "pane_owned": false,
+ "pane": null,
+ "processes": [
+  {
+   "pid": 2635,
+   "ppid": 2552,
+   "pgid": 2430,
+   "tpgid": -1,
+   "stat": "Sl",
+   "tty": "?",
+   "ucomm": "codex",
+   "args": "~/.local/share/feno-node/node-v22.23.3-linux-arm64/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/bin/codex -c features.code_mode_host=true app-server --listen unix://"
+  },
+  {
+   "pid": 2552,
+   "ppid": 1,
+   "pgid": 2430,
+   "tpgid": -1,
+   "stat": "Sl",
+   "tty": "?",
+   "ucomm": "node",
+   "args": "node ~/.local/share/feno-node/node-v22.23.3-linux-arm64/bin/codex -c features.code_mode_host=true app-server --listen unix://",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "codex",
+ "agent_families": [
+  "codex"
+ ],
+ "agent_process_count": 1,
+ "evidence": "root 2635 ucomm=codex; not a pane: Linux node shim -> codex vendor binary, no tty"
+}

@@ -1,0 +1,58 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/tmux-501/mona",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%185",
+  "session": "mona",
+  "window_index": "2",
+  "pane_index": "1",
+  "pane_pid": 96905,
+  "pane_tty": "/dev/ttys008",
+  "pane_current_command": "2.1.329",
+  "pane_current_path": "~/work/project",
+  "pane_title": "✳ Claude Code",
+  "feno_launcher": "mccd"
+ },
+ "processes": [
+  {
+   "pid": 96905,
+   "ppid": 961,
+   "pgid": 96905,
+   "tpgid": 96905,
+   "stat": "Ss+",
+   "tty": "ttys008",
+   "ucomm": "2.1.329",
+   "args": "claude --dangerously-skip-permissions --model opus[1m] --settings ~/.cache/atlas-host/claude-hooks-4eb4911a-088e-4dd0-a482-541482203dd5.json --effort medium --session-id 4eb4911a-088e-4dd0-a482-541482203dd5"
+  },
+  {
+   "pid": 97098,
+   "ppid": 96905,
+   "pgid": 96905,
+   "tpgid": 96905,
+   "stat": "S+",
+   "tty": "ttys008",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"/bin/bash\",\"args\":[\"-c\",<prose>],\"identity_files\":[\"~/.local/share/feno/atlas-reverse/rea/bin/rea\",\"~/.local/share/feno/atlas-reverse/env …<truncated>"
+  },
+  {
+   "pid": 961,
+   "ppid": 1,
+   "pgid": 961,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux-3.5a",
+   "args": "~/.local/bin/tmux-3.5a -L mona new-session -d -s mona -e FENO_ACTOR=mona -e CLAUDE_CONFIG_DIR=~/.claude-mona -c ~/work/project",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "claude",
+ "evidence": "pane pid 96905 ucomm=2.1.329 argv0='claude'; @feno_launcher='mccd'",
+ "agent_families": [
+  "claude"
+ ],
+ "agent_process_count": 1
+}

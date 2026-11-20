@@ -1,0 +1,46 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/tmux-501/fh-orbit-81475",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%1",
+  "session": "main",
+  "window_index": "0",
+  "pane_index": "1",
+  "pane_pid": 81510,
+  "pane_tty": "/dev/ttys013",
+  "pane_current_command": "bash",
+  "pane_current_path": "~/work/project",
+  "pane_title": "<host>",
+  "feno_launcher": ""
+ },
+ "processes": [
+  {
+   "pid": 81510,
+   "ppid": 81499,
+   "pgid": 81510,
+   "tpgid": 81510,
+   "stat": "Ss+",
+   "tty": "ttys013",
+   "ucomm": "bash",
+   "args": "bash --noprofile --norc -i"
+  },
+  {
+   "pid": 81499,
+   "ppid": 1,
+   "pgid": 81499,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux-3.5a",
+   "args": "tmux -L fh-orbit-81475 new-session -d -s main -n sender bash --noprofile --norc -i",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "shell",
+ "evidence": "pane pid 81510 ucomm=bash argv0='bash'",
+ "agent_families": [],
+ "agent_process_count": 0
+}

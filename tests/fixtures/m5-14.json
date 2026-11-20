@@ -1,0 +1,238 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/tmux-501/migration-20260927/fenok-next",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%105",
+  "session": "fenok-next",
+  "window_index": "7",
+  "pane_index": "1",
+  "pane_pid": 34697,
+  "pane_tty": "/dev/ttys026",
+  "pane_current_command": "2.1.328",
+  "pane_current_path": "~/work/project",
+  "pane_title": "✳ Claude Code",
+  "feno_launcher": "mccd"
+ },
+ "processes": [
+  {
+   "pid": 34697,
+   "ppid": 96732,
+   "pgid": 34697,
+   "tpgid": 34697,
+   "stat": "Ss+",
+   "tty": "ttys026",
+   "ucomm": "2.1.328",
+   "args": "claude --dangerously-skip-permissions --model opus[1m] --settings ~/.cache/atlas-host/claude-hooks-daec9029-1116-49b4-93f1-60c2bc7e51c3.json --effort medium --session-id daec9029-1116-49b4-93f1-60c2bc7e51c3"
+  },
+  {
+   "pid": 35167,
+   "ppid": 34697,
+   "pgid": 34697,
+   "tpgid": 34697,
+   "stat": "S+",
+   "tty": "ttys026",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"/bin/bash\",\"args\":[\"-c\",<prose>],\"identity_files\":[\"~/.local/share/feno/atlas-reverse/rea/bin/rea\",\"~/.local/share/feno/atlas-reverse/env …<truncated>"
+  },
+  {
+   "pid": 58225,
+   "ppid": 34697,
+   "pgid": 58225,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098919680-khc41d.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 50786,
+   "ppid": 58225,
+   "pgid": 58225,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 1"
+  },
+  {
+   "pid": 58502,
+   "ppid": 34697,
+   "pgid": 58502,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098919680-khc41d.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 50661,
+   "ppid": 58502,
+   "pgid": 58502,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 1"
+  },
+  {
+   "pid": 63581,
+   "ppid": 34697,
+   "pgid": 63581,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098919680-khc41d.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 50624,
+   "ppid": 63581,
+   "pgid": 63581,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 1"
+  },
+  {
+   "pid": 65418,
+   "ppid": 34697,
+   "pgid": 34697,
+   "tpgid": 34697,
+   "stat": "S+",
+   "tty": "ttys026",
+   "ucomm": "node",
+   "args": "node ~/.local/state/fnm_multishells/34793_1795098906647/bin/pyright-langserver --stdio"
+  },
+  {
+   "pid": 68271,
+   "ppid": 34697,
+   "pgid": 68271,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098919680-khc41d.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 50590,
+   "ppid": 68271,
+   "pgid": 68271,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "(sleep)"
+  },
+  {
+   "pid": 69235,
+   "ppid": 34697,
+   "pgid": 69235,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098919680-khc41d.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 50729,
+   "ppid": 69235,
+   "pgid": 69235,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 1"
+  },
+  {
+   "pid": 74050,
+   "ppid": 34697,
+   "pgid": 74050,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098919680-khc41d.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 50741,
+   "ppid": 74050,
+   "pgid": 74050,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 1"
+  },
+  {
+   "pid": 77032,
+   "ppid": 34697,
+   "pgid": 34697,
+   "tpgid": 34697,
+   "stat": "S+",
+   "tty": "ttys026",
+   "ucomm": "tsc",
+   "args": "~/.local/share/fnm/node-versions/v22.23.5/installation/lib/node_modules/typescript/node_modules/@typescript/typescript-darwin-arm64/lib/tsc --lsp --stdio"
+  },
+  {
+   "pid": 83170,
+   "ppid": 34697,
+   "pgid": 83170,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098919680-khc41d.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 50647,
+   "ppid": 83170,
+   "pgid": 83170,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 1"
+  },
+  {
+   "pid": 91983,
+   "ppid": 34697,
+   "pgid": 91983,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795098919680-khc41d.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 50668,
+   "ppid": 91983,
+   "pgid": 91983,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 1"
+  },
+  {
+   "pid": 96732,
+   "ppid": 1,
+   "pgid": 96732,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux",
+   "args": "~/.local/opt/tmux-3.5a-jemalloc/bin/tmux -S /private/tmp/tmux-501/migration-20260927/fenok-next -f ~/.local/state/fenok-next-migration/20260927/runtime/fenok-next-a49e20d54282/tmux.conf new-session -d -s fenok-next -c ~/work/project",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "claude",
+ "evidence": "pane pid 34697 ucomm=2.1.328 argv0='claude'; @feno_launcher='mccd'",
+ "agent_families": [
+  "claude"
+ ],
+ "agent_process_count": 1
+}

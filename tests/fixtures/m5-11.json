@@ -1,0 +1,108 @@
+{
+ "host": "m5",
+ "os": "macOS 27.0 (Darwin 27.0.0) arm64",
+ "captured_at": "2026-11-20T17:16:39Z",
+ "socket": "/private/tmp/tmux-501/migration-20260927/fenok-next",
+ "pane_owned": true,
+ "pane": {
+  "pane_id": "%102",
+  "session": "fenok-next",
+  "window_index": "4",
+  "pane_index": "1",
+  "pane_pid": 36093,
+  "pane_tty": "/dev/ttys021",
+  "pane_current_command": "2.1.328",
+  "pane_current_path": "~/work/project",
+  "pane_title": "✳ Claude Code",
+  "feno_launcher": "mccd"
+ },
+ "processes": [
+  {
+   "pid": 36093,
+   "ppid": 96732,
+   "pgid": 36093,
+   "tpgid": 36093,
+   "stat": "Ss+",
+   "tty": "ttys021",
+   "ucomm": "2.1.328",
+   "args": "claude --dangerously-skip-permissions --model opus[1m] --settings ~/.cache/atlas-host/claude-hooks-500dcdc5-6e4b-486f-8f8c-f9746d1c6743.json --effort medium --session-id 500dcdc5-6e4b-486f-8f8c-f9746d1c6743"
+  },
+  {
+   "pid": 27859,
+   "ppid": 36093,
+   "pgid": 36093,
+   "tpgid": 36093,
+   "stat": "S+",
+   "tty": "ttys021",
+   "ucomm": "caffeinate",
+   "args": "caffeinate -i -t 300"
+  },
+  {
+   "pid": 36411,
+   "ppid": 36093,
+   "pgid": 36093,
+   "tpgid": 36093,
+   "stat": "S+",
+   "tty": "ttys021",
+   "ucomm": "python3.12",
+   "args": "~/.feno/python/venv/bin/python3 ~/work/project --route {\"command\":\"/bin/bash\",\"args\":[\"-c\",<prose>],\"identity_files\":[\"~/.local/share/feno/atlas-reverse/rea/bin/rea\",\"~/.local/share/feno/atlas-reverse/env …<truncated>"
+  },
+  {
+   "pid": 40243,
+   "ppid": 36093,
+   "pgid": 36093,
+   "tpgid": 36093,
+   "stat": "S+",
+   "tty": "ttys021",
+   "ucomm": "tsc",
+   "args": "~/.local/share/fnm/node-versions/v22.23.5/installation/lib/node_modules/typescript/node_modules/@typescript/typescript-darwin-arm64/lib/tsc --lsp --stdio"
+  },
+  {
+   "pid": 53235,
+   "ppid": 36093,
+   "pgid": 36093,
+   "tpgid": 36093,
+   "stat": "S+",
+   "tty": "ttys021",
+   "ucomm": "node",
+   "args": "node ~/.local/state/fnm_multishells/36178_1795094618608/bin/pyright-langserver --stdio"
+  },
+  {
+   "pid": 90409,
+   "ppid": 36093,
+   "pgid": 90409,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "zsh",
+   "args": "/bin/zsh -c source ~/.claude-mona/shell-snapshots/snapshot-zsh-1795094627795-ivnhsw.sh 2>/dev/null || true && \\builtin setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL NO_BRACE_CCL NO_MAGIC_EQUAL_SUBST NO_EQUALS 2>/dev/null || true && { \\builtin unalias -- 'which'; \\builtin unset -f -- 'which<prose>unseten …<truncated>"
+  },
+  {
+   "pid": 46847,
+   "ppid": 90409,
+   "pgid": 90409,
+   "tpgid": 0,
+   "stat": "S",
+   "tty": "??",
+   "ucomm": "sleep",
+   "args": "sleep 600"
+  },
+  {
+   "pid": 96732,
+   "ppid": 1,
+   "pgid": 96732,
+   "tpgid": 0,
+   "stat": "Ss",
+   "tty": "??",
+   "ucomm": "tmux",
+   "args": "~/.local/opt/tmux-3.5a-jemalloc/bin/tmux -S /private/tmp/tmux-501/migration-20260927/fenok-next -f ~/.local/state/fenok-next-migration/20260927/runtime/fenok-next-a49e20d54282/tmux.conf new-session -d -s fenok-next -c ~/work/project",
+   "role": "parent"
+  }
+ ],
+ "expected_family": "claude",
+ "evidence": "pane pid 36093 ucomm=2.1.328 argv0='claude'; @feno_launcher='mccd'",
+ "agent_families": [
+  "claude"
+ ],
+ "agent_process_count": 1
+}
